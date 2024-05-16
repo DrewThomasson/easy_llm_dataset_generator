@@ -10,3 +10,6 @@ makes a llm with a specific prompt provide a new answer to all the input s to a 
 
 `pip install PyQt5 pandas tqdm ollama
 `
+
+# Make sure you have Ollama installed on your computer also
+https://ollama.com
