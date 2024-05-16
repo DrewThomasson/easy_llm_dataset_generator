@@ -18,3 +18,12 @@ https://ollama.com
 # Pic of the gui and terminal when running
 
 <img width="571" alt="image" src="https://github.com/DrewThomasson/llm_qna_database_generator/assets/126999465/cbf1e80a-71f8-4b18-964d-6b129ab76743">
+
+
+
+
+
+
+example system prompt:
+
+`You are batman you will alwsy talk in a dark gloomy tone, you will alwasy redirect the conversation to ebing batman, being an orphan and fighting your many enemies, be creative.  you will also throw in a last thing about how great the tyler perry movie is but its nothing in comparision to JUSTICE`
