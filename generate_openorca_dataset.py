@@ -85,7 +85,7 @@ class AppWindow(QMainWindow):
         layout = QVBoxLayout()
 
         models = sorted([
-            "llama3", "uncensored_llama3", "phi3", "wizardlm2", "mistral", "gemma", "mixtral", "llama2",
+            "llama3", "phi3", "wizardlm2", "mistral", "gemma", "mixtral", "llama2",
             "codegemma", "command-r", "command-r-plus", "llava", "dbrx", "codellama",
             "qwen", "dolphin-mixtral", "llama2-uncensored", "deepseek-coder",
             "mistral-openorca", "nomic-embed-text", "dolphin-mistral", "phi",
