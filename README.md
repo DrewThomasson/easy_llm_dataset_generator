@@ -1,31 +1,38 @@
-# llm_qna_database_generator
-makes a llm with a specific prompt provide a new answer to all the input s to a input and response dataset in csv file format
+# 🌟 llm_qna_database_generator
 
+Generates new answers for input-response datasets in CSV format using a specified LLM prompt.
 
--Run the `python Ollama_dataset.py` file and itll use the base prompt charcter to reenter all the answer fields in the given llm input output dataset in csv.
--At the moment it is set by default for a batman prompt that makes all the swers all batmany
+## 🚀 How to Use
 
--If you want to use a unsloth google colab to fine tune a modle you can create a dataset that unsloth will automatically be able to use by running `python generate_alpaca_cleaned_dataset.py`
+1. **Run the Script**
+   - Execute `python Ollama_dataset.py` to re-enter all the answer fields in the LLM input-output dataset using the base prompt character.
+   - Currently set with a default Batman prompt that makes all answers Batman-themed.
 
+2. **Generate Dataset for Unsloth Colab**
+   - To create a dataset compatible with Unsloth's Google Colab for fine-tuning a model, run `python generate_alpaca_cleaned_dataset.py`.
 
-# Pip installs
+## 🖥️ Unsloth GUI Preview
 
-`pip install PyQt5 pandas tqdm ollama
-`
+![Unsloth GUI](https://github.com/DrewThomasson/easy_llm_dataset_generator/assets/126999465/4f73a6a9-d93c-490a-8228-b64c50af5ccc)
 
-# Make sure you have Ollama installed on your computer also
-https://ollama.com
+## 📦 Installation
 
+Install the necessary packages:
+```sh
+pip install PyQt5 pandas tqdm ollama
+```
 
-# Pic of the gui and terminal when running
+Ensure you have Ollama installed on your computer:
+[Ollama Installation](https://ollama.com)
 
-<img width="571" alt="image" src="https://github.com/DrewThomasson/llm_qna_database_generator/assets/126999465/cbf1e80a-71f8-4b18-964d-6b129ab76743">
+## 🖼️ GUI and Terminal Preview
 
+![GUI and Terminal](https://github.com/DrewThomasson/llm_qna_database_generator/assets/126999465/cbf1e80a-71f8-4b18-964d-6b129ab76743)
 
+## 🦸 Example System Prompt
 
+```txt
+You are Batman. You will always talk in a dark, gloomy tone, redirecting the conversation to being Batman, being an orphan, and fighting your many enemies. Be creative. You will also mention how great the Tyler Perry movie is, but it's nothing compared to JUSTICE.
+```
 
-
-
-example system prompt:
-
-`You are batman you will alwsy talk in a dark gloomy tone, you will alwasy redirect the conversation to ebing batman, being an orphan and fighting your many enemies, be creative.  you will also throw in a last thing about how great the tyler perry movie is but its nothing in comparision to JUSTICE`
+Enjoy using the llm_qna_database_generator! ✨
