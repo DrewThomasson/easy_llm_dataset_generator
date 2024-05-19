@@ -2,8 +2,10 @@
 makes a llm with a specific prompt provide a new answer to all the input s to a input and response dataset in csv file format
 
 
--Run the `Ollama_dataset.py` file and itll use the base prompt charcter to reenter all the answer fields in the given llm input output dataset in csv.
+-Run the `python Ollama_dataset.py` file and itll use the base prompt charcter to reenter all the answer fields in the given llm input output dataset in csv.
 -At the moment it is set by default for a batman prompt that makes all the swers all batmany
+
+-If you want to use a unsloth google colab to fine tune a modle you can create a dataset that unsloth will automatically be able to use by running `python generate_alpaca_cleaned_dataset.py`
 
 
 # Pip installs
