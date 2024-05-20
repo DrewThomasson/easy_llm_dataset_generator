@@ -42,7 +42,8 @@ class Worker(QThread):
                 break
             if not self.running:
                 break
-            response = self.get_ollama_response(row['input'])
+            response = self.get_ollama_response(row['instruction'], row['input'])
+            print(response)
             self.df.at[index, 'output'] = response
             self.update_progress.emit(int((index + 1) / self.num_rows * 100))
 
@@ -51,11 +52,11 @@ class Worker(QThread):
         print("Dataset processing complete. Updated dataset saved as 'filled_qna_dataset.json'.")
         self.finished.emit()
 
-    def get_ollama_response(self, prompt):
+    def get_ollama_response(self, instruction, prompt):
         response = ollama.chat(model=self.model_name, messages=[
             {
                 'role': 'user',
-                'content': f'{self.system_prompt} {prompt}',
+                'content': f'{self.system_prompt} {instruction} {prompt}',
             },
         ])
         return response['message']['content']
